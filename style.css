@@ -139,7 +139,15 @@ body {
   border-color: #64e8ff;
   box-shadow: 0 5px 15px rgba(100, 224, 255, 0.3);
   transform: translateY(0) scale(0.98);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.tip-btn.active {
+  background: rgba(91, 222, 255, 0.1);
+  color: #09c6ff;
+  border-color: #6e39ff;
+  box-shadow: 0 5px 15px rgba(141, 100, 255, 0.3);
+  transition: all 0.2s ease-in-out;
 }
 
 .people-selector {
