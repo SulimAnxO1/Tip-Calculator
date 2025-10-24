@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div class="container">
+      <!-- HEADER -->
+      <div class="header">
+        <!-- TITLE -->
+        <h1>💰 Tip Calculator</h1>
+        <!-- DESCRIPTION -->
+        <p>Calculate tips and split bills easily</p>
+      </div>
 
+      <!-- INPUT SECTION -->
+      <div class="input-section">
+        <!-- BILL AMOUNT -->
+        <div class="input-group">
+          <!-- TITLE -->
+          <label>
+            <span class="icon">🧾</span>
+            Bill Amount
+          </label>
+
+          <!-- INPUT -->
+          <div class="input-field">
+            <span class="currency">$</span>
+            <input
+              type="number"
+              id="billAmount"
+              class="with-currency"
+              placeholder="0.00"
+              step="0.01"
+              min="0" />
+          </div>
+        </div>
+
+        <!-- TIP PERCENTAGE -->
+        <div class="input-group">
+          <!-- TITLE -->
+          <label>
+            <span class="icon">💡</span>
+            Select Tip %
+          </label>
+
+          <!-- TIP PERCENTAGE OPTION BUTTONS -->
+          <div class="tip-buttons">
+            <!-- 10% -->
+            <button class="tip-btn" data-tip="10">10%</button>
+            <!-- 15% -->
+            <button class="tip-btn" data-tip="15">15%</button>
+            <!-- 18% -->
+            <button class="tip-btn" data-tip="18">18%</button>
+            <!-- 20% -->
+            <button class="tip-btn" data-tip="20">20%</button>
+            <!-- 25% -->
+            <button class="tip-btn" data-tip="25">25%</button>
+            <!-- 30% -->
+            <button class="tip-btn" data-tip="30">30%</button>
+          </div>
+
+          <!-- CUSTOM TIP OPTION -->
+          <div class="custom-tip">
+            <input
+              type="number"
+              id="customTip"
+              placeholder="Custom tip %"
+              min="0"
+              max="100" />
+          </div>
+        </div>
+
+        <!-- NUMBER OF PEOPLE -->
+        <div class="input-group">
+          <!-- TITLE -->
+          <label>
+            <span class="icon">👥</span>
+            Number of People
+          </label>
+
+          <!-- PEOPLE SELECTOR OPTION -->
+          <div class="people-selector">
+            <!-- PLUS BUTTON -->
+            <button class="people-btn" id="decreasePeople">−</button>
+            <!-- PEOPLE COUNT  -->
+            <span class="people-count" id="peopleCount">1</span>
+            <!-- MINUS BUTTON -->
+            <button class="people-btn" id="increasePeople">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="results">
+        <!-- TIP AMOUNT -->
+        <div class="result-row">
+          <div class="result-label">
+            <span class="icon">+</span>
+            Tip Amount
+          </div>
+          <!-- TIP AMOUNT -->
+          <div class="result-value" id="tipAmount">$0.00</div>
+        </div>
+
+        <!-- TOTAL AMOUNT -->
+        <div class="result-row">
+          <div class="result-label">
+            <span class="icon">=</span>
+            Total Amount
+          </div>
+          <!-- TOTAL AMOUNT -->
+          <div class="result-value highlight" id="totalAmount">$0.00</div>
+        </div>
+
+        <!-- PER PERSON -->
+        <div class="result-row">
+          <div class="result-label">
+            <span class="icon">÷</span>
+            Per Person
+          </div>
+          <!-- PER PERSON AMOUNT -->
+          <div class="result-value" id="perPersonAmount">$0.00</div>
+        </div>
+
+        <!-- TIP PER-PERSON -->
+        <div class="result-row">
+          <div class="result-label">
+            <span class="icon">•</span>
+            Tip Per Person
+          </div>
+          <!-- TIP PER-PERSON AMOUNT -->
+          <div class="result-value" id="tipPerPerson">$0.00</div>
+        </div>
+      </div>
+
+      <!-- RESET BUTTON -->
+      <button class="reset-btn" id="resetBtn">↻ Reset All</button>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
