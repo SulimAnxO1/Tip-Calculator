@@ -12,23 +12,23 @@ A sleek and minimal **Tip Calculator App** built using **HTML**, **CSS**, and **
 
 ## 🖼️ Preview
 
-![Tip Calculator Preview](/Image/preview.png)
+![Tip Calculator Preview](/image/preview.png)
 
 ---
 
 ## ✨ Features
 
-- 💰 Calculate total tip and bill instantly  
-- 👥 Split bill between multiple people  
-- 🔢 Adjustable tip percentage  
-- ⚡ Real-time calculation updates  
-- 🎨 Simple and modern UI design  
-- 📱 Fully responsive layout  
+- 💰 Calculate total tip and bill instantly
+- 👥 Split bill between multiple people
+- 🔢 Adjustable tip percentage
+- ⚡ Real-time calculation updates
+- 🎨 Simple and modern UI design
+- 📱 Fully responsive layout
 
 ---
 
 ## 🧩 Built With
 
-- 🧱 **HTML5**  
-- 🎨 **CSS3** (Gradients, Flexbox, Styling)  
+- 🧱 **HTML5**
+- 🎨 **CSS3** (Gradients, Flexbox, Styling)
 - ⚙️ **JavaScript** (Dynamic Tip Calculation)
