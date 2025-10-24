@@ -36,9 +36,9 @@ body {
 
 .header h1 {
   font-size: 2.2rem;
-  color: #64ffda;
+  color: #977aff;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+  text-shadow: 0 0 20px rgba(141, 100, 255, 0.2);
 }
 
 .header p {
@@ -59,7 +59,7 @@ body {
   align-items: center;
   margin-bottom: 0.8rem;
   font-size: 1rem;
-  color: #64ffda;
+  color: #9264ff;
   font-weight: 600;
 }
 
@@ -81,13 +81,15 @@ body {
   color: #ffffff;
   font-size: 1.1rem;
   outline: none;
+  caret-color: #64fff7;
   transition: all 0.3s ease;
 }
 
 .input-field input:focus {
-  border-color: #64ffda;
-  box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
+  border-color: #9264ff;
+  box-shadow: 0 0 15px rgba(128, 100, 255, 0.2);
   background: rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease-in;
 }
 
 .input-field .currency {
@@ -120,20 +122,24 @@ body {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .tip-btn:hover {
-  background: rgba(100, 255, 218, 0.1);
-  border-color: #64ffda;
+  background: rgba(140, 91, 255, 0.1);
+  border-color: #8d64ff;
+  color: #64ffda;
   transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
 }
 
-.tip-btn.active {
-  background: #64ffda;
-  color: #0f0f23;
-  border-color: #64ffda;
-  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+.tip-btn:active {
+  background: #64dbff;
+  color: #110f23;
+  border-color: #64e8ff;
+  box-shadow: 0 5px 15px rgba(100, 224, 255, 0.3);
+  transform: translateY(0) scale(0.98);
+  transition: all 0.3s ease-in-out;
 }
 
 .people-selector {
@@ -160,18 +166,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 
-.people-btn:hover {
-  background: #64ffda;
+.plus:hover {
+  background: #64edff;
   color: #0f0f23;
   transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.minus:hover {
+  background: #9264ff;
+  color: #0f0f23;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.people-btn:active {
+  transform: scale(0.99);
+  transition: all 0.2s ease-in-out;
+  color: white;
+  opacity: 0.7;
 }
 
 .people-count {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #64ffda;
+  color: #64ffff;
   min-width: 60px;
   text-align: center;
 }
@@ -235,10 +257,11 @@ body {
   outline: none;
   transition: all 0.3s ease;
   text-align: center;
+  caret-color: #64ffff;
 }
 
 .custom-tip input:focus {
-  border-color: #64ffda;
+  border-color: #8664ff;
   box-shadow: 0 0 10px rgba(100, 255, 218, 0.2);
 }
 
@@ -252,13 +275,21 @@ body {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   margin-top: 1.5rem;
 }
 
 .reset-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.reset-btn:active {
+  background: rgba(255, 255, 255, 0.3);
+  color: hsla(0, 0%, 100%, 0.5);
+  transform: translateY(0) scale(0.98);
+  transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 480px) {
